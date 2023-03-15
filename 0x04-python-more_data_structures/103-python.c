@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <Python.h>
+#include <python.h>
 
 /**
  * print_python_bytes - Prints bytes information
@@ -66,5 +66,5 @@ void print_python_list(PyObject *p)
 		printf("Element %ld: %s\n", i, ((obj)->ob_type)->tp_name);
 		if (PyBytes_Check(obj))
 			print_python_bytes(obj);
-	}
+}
 
